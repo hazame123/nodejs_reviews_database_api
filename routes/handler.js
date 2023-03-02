@@ -11,10 +11,6 @@ router.get('/reviews', async (req, res) => {
             conn.query(qry, (err, result) => {
                 conn.release()
                 if (err) throw err
-                // res.set({
-                //     "Content-Type": "application/json",
-                //     "Access-Control-Allow-Origin": "*",
-                // })
                 res.send(JSON.stringify(result))
             })
         } catch (err) {
