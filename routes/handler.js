@@ -35,7 +35,7 @@ router.post('/addReview', async (req, res) => {
             if (err) throw err
             console.log('Review Added!')
         })
-        res.redirect('http://localhost:3000/testimonials')
+        res.redirect('https://hnkcitycontractors.co.uk/testimonials')
         res.end()
     })
 })
